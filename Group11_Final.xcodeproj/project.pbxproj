@@ -11,6 +11,7 @@
 		8F61F03029B6B8C100C6F50D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61F02F29B6B8C100C6F50D /* ContentView.swift */; };
 		8F61F03229B6B8C200C6F50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F61F03129B6B8C200C6F50D /* Assets.xcassets */; };
 		8F61F03529B6B8C200C6F50D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F61F03429B6B8C200C6F50D /* Preview Assets.xcassets */; };
+		8F61F03C29B6BC3900C6F50D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61F03B29B6BC3900C6F50D /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8F61F02F29B6B8C100C6F50D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F61F03129B6B8C200C6F50D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F61F03429B6B8C200C6F50D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F61F03B29B6BC3900C6F50D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				8F61F02F29B6B8C100C6F50D /* ContentView.swift */,
 				8F61F03129B6B8C200C6F50D /* Assets.xcassets */,
 				8F61F03329B6B8C200C6F50D /* Preview Content */,
+				8F61F03B29B6BC3900C6F50D /* LoginView.swift */,
 			);
 			path = Group11_Final;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F61F03C29B6BC3900C6F50D /* LoginView.swift in Sources */,
 				8F61F03029B6B8C100C6F50D /* ContentView.swift in Sources */,
 				8F61F02E29B6B8C100C6F50D /* Group11_FinalApp.swift in Sources */,
 			);
