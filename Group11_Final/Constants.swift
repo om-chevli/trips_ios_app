@@ -10,4 +10,6 @@ class Constants{
     let EMAIL_KEY: String = "email"
     let PASSWORD_KEY: String = "password"
     let IS_LOGGED_IN_KEY: String = "isLoggedIn"
+    let LOGGED_IN_USER_ID:String = "loggedInUserId"
+    let FAVOURITES_DICT:String = "favouritesDictionary"
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 class Activity: Identifiable {
-    let id = UUID()
+    let id:String
     let name: String
     let description: String
     let rating: Double
@@ -16,7 +16,8 @@ class Activity: Identifiable {
     let photos: [String]
     let price: Double
     
-    init(name: String, description: String, rating: Double, host: String, photos: [String], price: Double) {
+    init(id:String, name: String, description: String, rating: Double, host: String, photos: [String], price: Double) {
+        self.id = id
         self.name = name
         self.description = description
         self.rating = rating

@@ -68,20 +68,21 @@ struct LoginView: View {
             self.loadInitialData()
         })
         .fullScreenCover(isPresented: $isLoggedIn){
-            ActivitiesView(activities: [])
+            ContentView()
         }
         
     }
     
     func saveCredentials() {
-        
         defaults.set(self.email, forKey: const.EMAIL_KEY)
         defaults.set(self.password, forKey: const.PASSWORD_KEY)
     }
     
     func logInUser() {
-        self.isLoggedIn = true
-        defaults.set(true, forKey: const.IS_LOGGED_IN_KEY)
+        let isValidUser = AuthManager.shared.loginUser(email: self.email, password: self.password)
+        if(isValidUser){
+            self.isLoggedIn = true
+        }
     }
     
     

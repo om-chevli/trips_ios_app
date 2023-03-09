@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ActivitiesView: View {
-    let activities: [Activity]
+    let activities: [Activity] = DataSource.shared.activities
     @State private var searchText = ""
-
+    @State private var isLoggedOut: Bool = false
     var body: some View {
         NavigationView{
             VStack {
@@ -23,8 +23,23 @@ struct ActivitiesView: View {
                         }
                     }
                 }
+                
+
             }
             .navigationBarTitle("Activities")
+            .navigationBarItems(trailing:
+                Button(action: {
+                    // Logout user
+                AuthManager.shared.logoutUser()
+                isLoggedOut = true
+                }) {
+                    Image(systemName: "power")
+                        .foregroundColor(.primary)
+                }
+            )
+        }
+        .fullScreenCover(isPresented: $isLoggedOut){
+            LoginView()
         }
     }
 }
@@ -51,14 +66,12 @@ struct ActivityRowView: View {
                     .foregroundColor(.secondary)
             }
         }
-    }//VStack
+    }
 }
 
 struct ActivitiesView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivitiesView(activities: [
-            Activity(name: "Hello", description: "Hello Hiii", rating: 2.0, host: "dhsfdhs", photos: ["Activity1Photo1","Activity1Photo1" ], price: 23.99)
-        ])
+        ActivitiesView()
     }
 }
 
